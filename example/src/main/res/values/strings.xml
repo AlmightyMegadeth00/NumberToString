@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NumberToString Example</string>
+    <string name="hint">Enter any number</string>
+    <string name="text_output">String Output:</string>
+    <string name="button_text">Get String</string>
+    <string name="string_ouput">String Output</string>
+    <string name="ok">OK</string>
+</resources>
