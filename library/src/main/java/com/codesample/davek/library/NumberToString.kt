@@ -13,7 +13,8 @@ object NumberToString {
      * ex: input: convertToString(5) -> output: "five"
      *
      * @param input: Double
-     *
+     * @param context: Context used to get string resources
+     * @return String as human readable format
      */
     @JvmStatic fun convertToString(input: Double, context: Context): String {
         return ToReadableFormat(input,context).parseFromDouble()
@@ -34,7 +35,8 @@ object NumberToString {
      * ex: input: convertToString(5) -> output: "five"
      *
      * @param input: Int
-     *
+     * @param context: Context used to get string resources
+     * @return String as human readable format
      */
     @JvmStatic fun convertToString(input: Int, context: Context): String {
         return ToReadableFormat(input, context).parseFromInt()
@@ -63,7 +65,11 @@ object NumberToString {
     }
 
     /**
-     * Safeguard against extensions of the abstract Number class other than standard types Double, Float, Long, etc
+     * Safeguard method against extensions of the abstract Number class other than standard types Double, Float, Long, etc
+     *
+     * @param input: Int
+     * @param context: Context used to get string resources
+     * @return String as human readable format
      */
     @Throws(IllegalStateException::class)
     @JvmStatic fun convertToString(input: Number, context: Context): String {
