@@ -19,12 +19,12 @@ object NumberToString {
         return ToReadableFormat(input,context).parseFromDouble()
     }
 
-    @Throws(IllegalStateException::class)
+    @Throws(NotImplementedError::class)
     @JvmStatic fun convertToString(input: Float, context: Context): String {
         TODO("Float number values are not currently supported")
     }
 
-    @Throws(IllegalStateException::class)
+    @Throws(NotImplementedError::class)
     @JvmStatic fun convertToString(input: Long, context: Context): String {
         TODO("Long number valuess are not currently supported")
     }
@@ -40,22 +40,24 @@ object NumberToString {
         return ToReadableFormat(input, context).parseFromInt()
     }
 
-    @Throws(IllegalStateException::class)
+    @Throws(NotImplementedError::class)
     @JvmStatic fun convertToString(input: Short, context: Context): String {
         TODO("Short number values are not currently supported")
     }
 
-    @Throws(IllegalStateException::class)
+    @Throws(NotImplementedError::class)
     @JvmStatic fun convertToString(input: Byte, context: Context): String {
         TODO("Byte number values are not currently supported")
     }
 
     // TODO: support other number APIs
+    @Throws(NotImplementedError::class)
     @JvmStatic fun convertToString(input: BigDecimal, context: Context): String {
         TODO("BigDecimal number values are not currently supported")
     }
 
     // TODO: support other number APIs
+    @Throws(NotImplementedError::class)
     @JvmStatic fun convertToString(input: BigInteger, context: Context): String {
         TODO("BigInteger number values are not currently supported")
     }
@@ -77,3 +79,4 @@ object NumberToString {
     }
 
 }
+
